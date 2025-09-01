@@ -3,31 +3,32 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Universo da Tela</title>
+  <title>Universo da Tela - Filmes & Séries</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>Universo da Tela</h1>
-    <input type="text" id="search" placeholder="Pesquisar filmes, séries ou novelas..." />
+    <input type="text" id="search" placeholder="Pesquisar filmes, séries ou novelas..." autocomplete="off" />
   </header>
 
-  <main id="content"></main>
+  <main id="content" aria-live="polite" aria-atomic="true"></main>
 
   <!-- Modal de vídeo -->
-  <div id="modal" class="modal">
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDescription">
     <div class="modal-content">
-      <span id="closeBtn" class="close">&times;</span>
+      <button id="closeBtn" class="close" aria-label="Fechar modal">&times;</button>
       <h2 id="modalTitle"></h2>
-      <div id="modalVideo" class="video-container"></div>
+      <div id="modalVideo" class="video-container" tabindex="0"></div>
       <p id="modalDescription"></p>
     </div>
   </div>
 
   <footer>
-    <p>Desenvolvido por Paola Valentina Silva Mendes</p>
+    <p>Desenvolvido por <strong>Paola Valentina Silva Mendes</strong></p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
