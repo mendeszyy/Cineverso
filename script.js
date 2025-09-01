@@ -25,4 +25,12 @@ const data = [
   },
   {
     title: "Lupin",
-    image: "https://image.tmdb.org/t/p/w500/7KVDx51xNi6
+    image: "https://image.tmdb.org/t/p/w500/7KVDx51xNi6wov6wvC4GJgfI1zB.jpg",
+    description: "Um ladrão carismático inspirado em Arsène Lupin.",
+    trailer: "https://www.youtube.com/embed/oygrmJFKYZY"
+  },
+  {
+    title: "The Witcher",
+    image: "https://image.tmdb.org/t/p/w500/7prYzufdIOy1KCTZKVWpjBFqqNr.jpg",
+    description: "Caçador de monstros em uma terra cheia de magia e perigo.",
+    trailer: "https://www.youtube.com/embed/ndl1
