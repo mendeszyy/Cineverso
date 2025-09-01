@@ -2,53 +2,27 @@ const data = [
   {
     title: "Stranger Things",
     image: "https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg",
-    description: "Um grupo de amigos enfrenta criaturas de outra dimensão na pequena cidade de Hawkins."
+    description: "Um grupo de amigos enfrenta criaturas de outra dimensão na pequena cidade de Hawkins.",
+    trailer: "https://www.youtube.com/embed/b9EkMc79ZSU"
   },
   {
-    title: "Pantanal",
-    image: "https://pbs.twimg.com/media/FR6Ov0KWUAErsKv.jpg",
-    description: "Remake da clássica novela brasileira, com cenários deslumbrantes e muito drama familiar."
+    title: "The Last of Us",
+    image: "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+    description: "Uma aventura emocionante em um mundo pós-apocalíptico.",
+    trailer: "https://www.youtube.com/embed/b6lpM05NV6E"
   },
   {
-    title: "Breaking Bad",
-    image: "https://upload.wikimedia.org/wikipedia/en/6/61/Breaking_Bad_title_card.png",
-    description: "Um professor de química entra no mundo do crime para garantir o futuro da sua família."
+    title: "Round 6 (Squid Game)",
+    image: "https://image.tmdb.org/t/p/w500/7vnGntD8fFgGcc2nlQi2fNjC36A.jpg",
+    description: "Jogos mortais e uma crítica social intensa em uma competição pela vida.",
+    trailer: "https://www.youtube.com/embed/oqxAJKy0ii4"
   },
   {
-    title: "Velozes e Furiosos",
-    image: "https://m.media-amazon.com/images/I/81T9u0+o5-L._AC_UF894,1000_QL80_.jpg",
-    description: "Corridas, ação e família. Uma das franquias mais populares do cinema."
-  }
-];
-
-const content = document.getElementById("content");
-const search = document.getElementById("search");
-
-// Função para exibir os cards
-function showCards(items) {
-  content.innerHTML = "";
-  items.forEach(item => {
-    const card = document.createElement("div");
-    card.classList.add("card");
-
-    card.innerHTML = `
-      <img src="${item.image}" alt="${item.title}">
-      <div class="card-content">
-        <div class="card-title">${item.title}</div>
-        <div class="card-description">${item.description}</div>
-      </div>
-    `;
-
-    content.appendChild(card);
-  });
-}
-
-// Filtro de busca
-search.addEventListener("input", (e) => {
-  const text = e.target.value.toLowerCase();
-  const filtered = data.filter(item => item.title.toLowerCase().includes(text));
-  showCards(filtered);
-});
-
-// Exibir todos ao carregar
-showCards(data);
+    title: "Duna (Dune)",
+    image: "https://image.tmdb.org/t/p/w500/d5NXSklXo0qyIYkgV94XAgMIckC.jpg",
+    description: "Uma épica saga de ficção científica com desertos e política interplanetária.",
+    trailer: "https://www.youtube.com/embed/8g18jFHCLXk"
+  },
+  {
+    title: "Lupin",
+    image: "https://image.tmdb.org/t/p/w500/7KVDx51xNi6
